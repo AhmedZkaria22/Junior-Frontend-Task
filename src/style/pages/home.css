@@ -1,0 +1,323 @@
+.invColor {
+  color: #5614cf;
+}
+.invColor:hover {
+  color: #5614cf;
+}
+
+/*@font-face {
+    font-family: cocon-regular;
+    src: url('../assets/font/Cocon-Regular.woff');
+    src: url('../assets/font/Cocon-Regular.otf');
+}
+@font-face {
+    font-family: cocon-bold;
+    src: url('../assets/font/Cocon-Bold.woff');
+    src: url('../assets/font/Cocon-Bold.otf');
+}
+
+body{
+    font-family: "cocon",sans-serif!important;
+}*/
+.pagination, #Home {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.pagination .page-item a, #Home .page-item a {
+  background-color: transparent;
+  border: none;
+  color: #5614cf;
+}
+.pagination .page-item a:focus, #Home .page-item a:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.pagination .page-item.paginationDisable, #Home .page-item.paginationDisable {
+  pointer-events: none;
+}
+.pagination .page-item.paginationDisable a, #Home .page-item.paginationDisable a {
+  pointer-events: none;
+  color: gray !important;
+}
+.pagination .page-item.active a, #Home .page-item.active a {
+  color: #000 !important;
+}
+@media screen and (max-width: 480px) {
+  .pagination, #Home {
+    margin: 2rem 1rem 0rem;
+    gap: 0.5rem;
+  }
+  .pagination .page-item a, #Home .page-item a {
+    white-space: nowrap;
+  }
+  .pagination .page-item a:first-of-type, #Home .page-item a:first-of-type, .pagination .page-item a:last-of-type, #Home .page-item a:last-of-type {
+    font-size: 0.85rem;
+  }
+}
+
+#Home {
+  background-color: #f9f9f9;
+  min-height: calc(100vh - 107px);
+}
+#Home .homeNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 4rem 0rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#Home form.searchForm {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+#Home form.searchForm > * {
+  border: none !important;
+}
+#Home form.searchForm input {
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+}
+#Home form.searchForm input::-webkit-input-placeholder {
+  color: #b0b0b0;
+}
+#Home form.searchForm input::-moz-placeholder {
+  color: #b0b0b0;
+}
+#Home form.searchForm input:-ms-input-placeholder {
+  color: #b0b0b0;
+}
+#Home form.searchForm input::-ms-input-placeholder {
+  color: #b0b0b0;
+}
+#Home form.searchForm input::placeholder {
+  color: #b0b0b0;
+}
+#Home form.searchForm input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+#Home form.searchForm button {
+  text-transform: uppercase;
+}
+#Home form.searchForm button.filterBtn {
+  background-color: transparent;
+}
+#Home form.searchForm button.submitBtn {
+  background: linear-gradient(113deg, #f21d3c 28%, #f48b45 138%), linear-gradient(180deg, #020303, #020303);
+  color: white;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  padding: 20px 24px;
+  white-space: nowrap;
+}
+#Home button.switchBtn {
+  background: #5614cf;
+  text-transform: uppercase;
+  padding: 20px 24px;
+  border-radius: 1rem;
+  letter-spacing: 1.8px;
+}
+#Home #ListView {
+  position: relative;
+}
+#Home #ListView p.ListViewHead {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.87px;
+  color: #282828;
+  text-align: left;
+  padding: 1rem 2rem 0rem;
+}
+#Home #ListView .ListViewItems {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 23.5% 2% 23.5% 2% 23.5% 2% 23.5%;
+  grid-template-columns: repeat(4, 23.5%);
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  gap: 2%;
+  padding: 1rem 2rem;
+}
+#Home #ListView .ListViewItems > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+#Home #ListView .ListViewItems > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+#Home #ListView .ListViewItems > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+#Home #ListView .ListViewItems > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+#Home #ListView .ListViewItems .gymItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem;
+  text-decoration: none !important;
+  padding: 0.5rem;
+}
+#Home #ListView .ListViewItems .gymItem .gymItem_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#Home #ListView .ListViewItems .gymItem .gymItem_content p {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  color: #1a1a1a;
+}
+#Home #ListView .ListViewItems .gymItem .gymItem_content img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+#Home #ListView .ListViewItems .gymItem > p {
+  background-color: #62bd7a;
+  margin-bottom: 0px !important;
+  color: white;
+  padding: 0.5rem 0rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 500;
+}
+#Home #ListView .btnLocation {
+  margin: 5px;
+  width: 18px;
+  height: 18px;
+  background-image: url(https://maps.gstatic.com/tactile/mylocation/mylocation-sprite-1x.png);
+  background-size: 180px 18px;
+  background-position: -36px 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 40%;
+  right: 0%;
+}
+
+@media screen and (max-width: 480px) {
+  #Home .ListViewItems {
+    padding: 1rem 10% !important;
+    -ms-grid-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
+    -ms-grid-rows: (1fr)[4];
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #Home .ListViewItems > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #Home .ListViewItems > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  #Home .ListViewItems > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #Home .ListViewItems > *:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+}
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+  #Home .ListViewItems {
+    -ms-grid-columns: (49%)[2] !important;
+    grid-template-columns: repeat(2, 49%) !important;
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #Home .ListViewItems > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #Home .ListViewItems > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #Home .ListViewItems > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  #Home .ListViewItems > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .homeNav {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 768.1px) and (max-width: 992px) {
+  #Home .ListViewItems {
+    -ms-grid-columns: (32.0033%)[3] !important;
+    grid-template-columns: repeat(3, 32.0033%) !important;
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #Home .ListViewItems > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #Home .ListViewItems > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #Home .ListViewItems > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #Home .ListViewItems > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  #Home .ListViewItems > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  #Home .ListViewItems > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+}

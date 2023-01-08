@@ -1,0 +1,188 @@
+    
+
+@import '../general.scss';
+@import '../colors';
+
+#Home{
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 107px);
+
+    .homeNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 4rem 0rem;
+        flex-wrap: wrap;    
+    }
+
+
+    form.searchForm{
+        box-shadow: #64646f33 0px 7px 29px 0px;
+        border-radius: 0.5rem;
+        background-color: white;
+        &>*{
+            border: none !important;
+        }
+        input{
+            padding-right: 0px !important;
+            margin-right: 0px !important;
+            &::placeholder{ color: #b0b0b0; }
+            &:focus{ box-shadow: none !important; }
+        }
+        button{                   
+            text-transform: uppercase;     
+            &.filterBtn{
+                background-color: transparent;         
+            }
+            &.submitBtn{
+                background: $backGradient;
+                color: white;
+                border-radius: 0rem 0.5rem 0.5rem 0rem;
+                padding: 20px 24px;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    button.switchBtn{
+        background: $primary;
+        text-transform: uppercase;
+        padding: 20px 24px;
+        border-radius: 1rem;
+        letter-spacing: 1.8px;
+    }
+
+    #ListView{
+        position: relative;
+
+        p.ListViewHead{
+            font-size: 26px;
+            font-weight: 600;
+            letter-spacing: 0.87px;
+            color: #282828;
+            text-align: left;
+            padding: 1rem 2rem 0rem;
+        }
+    
+        .ListViewItems{
+            display: grid;
+            // 23.5 = 2% * 3 = 6 / 4(cols) = minus 1.5
+            grid-template-columns: repeat(4, 23.5%);
+            grid-template-rows: 1fr;
+            gap: 2%;
+            padding: 1rem 2rem;
+    
+            .gymItem{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                flex-direction: column;
+                // box-shadow: 0px 0px 4px #333;
+                box-shadow: #959da533 0px 8px 24px;
+                border-radius: 1rem;
+                text-decoration: none !important;
+                padding: 0.5rem;
+    
+                .gymItem_content{
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    flex-direction: column;
+                    
+                    p{
+                        font-size: 28px;
+                        font-weight: 700;
+                        letter-spacing: 3.5px;
+                        color: #1a1a1a;
+                    }
+                    img{
+                        display: block;
+                        max-width: 100%;
+                        width: 100%;
+                        margin: auto;
+                        border-radius: 1rem 1rem 0rem 0rem;
+                    }
+                }
+    
+                &>p{ 
+                    background-color: $green; 
+                    margin-bottom: 0px !important;
+                    color: white;
+                    padding: 0.5rem 0rem;
+                    border-radius: 0rem 0rem 1rem 1rem;
+                    line-height: 40px;
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .btnLocation {
+            margin: 5px;
+            width: 18px;
+            height: 18px;
+            background-image: url(https://maps.gstatic.com/tactile/mylocation/mylocation-sprite-1x.png);
+            background-size: 180px 18px;
+            background-position: -36px 0;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 40%;
+            right: 0%;
+        }
+    }
+
+
+
+    // .pagination{
+    //     justify-content: center;
+    //     gap: 1.5rem;
+    //     margin-top: 2rem;
+    //     .page-item{
+    //         a{
+    //             background-color: transparent;
+    //             border: none;
+    //             color: $primary;
+    //             &:focus{ box-shadow: none !important; }
+    //         }
+
+    //         &.paginationDisable{
+    //             pointer-events: none;
+    //             a{
+    //                 pointer-events: none;
+    //                 color: gray !important;
+    //             }
+    //         }
+    //         &.active{
+    //             a{ color: #000 !important; }
+    //         }
+    //     }
+    // }
+
+    @extend .pagination;
+}
+
+@media screen and (max-width: 480px) {
+    #Home .ListViewItems{ 
+        padding: 1rem 10% !important;
+        grid-template-columns: 1fr !important; 
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+    #Home .ListViewItems{ 
+        grid-template-columns: repeat(2, 49%) !important; 
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .homeNav{ justify-content: center !important; gap: 1rem; }
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 992px) {
+    #Home .ListViewItems{ 
+        grid-template-columns: repeat(3, 32.0033%) !important; 
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

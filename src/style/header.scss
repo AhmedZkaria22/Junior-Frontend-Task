@@ -1,0 +1,38 @@
+@import './colors';
+
+#Header{
+    
+    a{
+        &.home{
+            font-weight: bold;            
+        }
+        &.hotDeals{
+
+        }
+        &.arabic{
+
+        }
+        &.signUp{
+            background: $backGradient;
+            color: white;
+            border-radius: 0.5rem;
+        }
+        &.signIn, &.signUp{
+            padding: 0.4rem 1rem;
+        }
+    }
+
+    .signBtns{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .navbar-collapse.collapse.show{
+        .navbar-nav{
+            align-items: center;
+            a{ width: fit-content; }
+            .signBtns{ justify-content: center; }
+        }
+    }
+    .navbar-toggler:focus { box-shadow: none !important; }
+}

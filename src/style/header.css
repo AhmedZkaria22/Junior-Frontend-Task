@@ -1,0 +1,36 @@
+#Header a.home {
+  font-weight: bold;
+}
+#Header a.signUp {
+  background: linear-gradient(113deg, #f21d3c 28%, #f48b45 138%), linear-gradient(180deg, #020303, #020303);
+  color: white;
+  border-radius: 0.5rem;
+}
+#Header a.signIn, #Header a.signUp {
+  padding: 0.4rem 1rem;
+}
+#Header .signBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+#Header .navbar-collapse.collapse.show .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#Header .navbar-collapse.collapse.show .navbar-nav a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#Header .navbar-collapse.collapse.show .navbar-nav .signBtns {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#Header .navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}

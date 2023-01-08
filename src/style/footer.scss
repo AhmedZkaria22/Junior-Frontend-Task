@@ -1,0 +1,31 @@
+@import './colors';
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $primary;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+
+    a{
+        display: block;
+        &.maroofLink{
+            img{
+                width: 5rem;
+            }
+        }
+        &.inovaLink{
+            color: white;
+            text-decoration: none;
+            &:hover{ text-decoration: underline; }
+        }
+    }
+
+    p{
+        color: white;
+        margin-bottom: 0px !important;
+    }
+}
