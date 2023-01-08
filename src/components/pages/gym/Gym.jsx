@@ -8,7 +8,7 @@ import axios from 'axios';
 
 import '../../../style/pages/gym.css';
 
-
+// CustomToggle : functional componet to add custom accordion toggle
 function CustomToggle({ children, eventKey }) {
     const decoratedOnClick = useAccordionButton(eventKey, (event) =>
         event.target.classList.toggle('collapsed')
