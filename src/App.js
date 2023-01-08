@@ -1,11 +1,9 @@
-import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/pages/Home';
 
 import 'bootstrap/dist/css/bootstrap.min.css';	
 import 'bootstrap/dist/js/bootstrap.min.js';
-// import 'bootstrap/dist/js/bootstrap.min.js';
 
 import './style/general.css';
 import {

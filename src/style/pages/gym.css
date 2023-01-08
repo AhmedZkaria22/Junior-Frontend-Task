@@ -5,6 +5,11 @@
   color: #5614cf;
 }
 
+* {
+  -webkit-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
+}
+
 /*@font-face {
     font-family: cocon-regular;
     src: url('../assets/font/Cocon-Regular.woff');

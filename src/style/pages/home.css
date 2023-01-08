@@ -5,6 +5,11 @@
   color: #5614cf;
 }
 
+* {
+  -webkit-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
+}
+
 /*@font-face {
     font-family: cocon-regular;
     src: url('../assets/font/Cocon-Regular.woff');
@@ -230,6 +235,10 @@ body{
   position: absolute;
   bottom: 40%;
   right: 0%;
+  opacity: 0.8;
+}
+#Home #ListView .btnLocation:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
